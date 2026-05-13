@@ -483,6 +483,7 @@ PlatformBootManagerAfterConsole (
   //
   PlatformRegisterFvBootOption (&gUefiShellFileGuid, L"UEFI Shell", LOAD_OPTION_ACTIVE);
 
+  PlatformRegisterFvBootOption (&gCsmWrapFileGuid, L"CsMWrap", LOAD_OPTION_ACTIVE);
   //
   // Register iPXE if the binary is present in the firmware volume.
   //
