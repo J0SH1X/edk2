@@ -522,10 +522,11 @@ INF ShellPkg/DynamicCommand/DpDynamicCommand/DpDynamicCommand.inf
 INF ShellPkg/Application/Shell/Shell.inf
 !endif
 
+!if $(INCLUDE_CSMWRAP) == TRUE
 FILE APPLICATION = 01D137FF-F7F2-4EF6-9314-07010194F9D2 {
   SECTION PE32 = UefiPayloadPkg/csmwrap/csmwrap.efi
 }
-
+!endif
 
 #
 # Capsules
